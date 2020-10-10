@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital-Clock</title>
+    <style>
+        @font-face {
+            font-family: "dg7";
+            src: url(./DSDIGI.woff) format("woff");
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: absolute;
+        }
+        .clock-dial{
+            border: 2px solid red;
+            width: 400px;
+            height: 250px;
+            background-color: black;
+            display: flex;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .digits{
+            color: white;
+            font-size: 50px;
+            font-family: 'dg7';
+            font-weight: bold;
+
+        }
+    </style>
+    <script>
+        setInterval(showTime, 1000)
+        function showTime(){
+            let date= new Date()
+            document.querySelector(".digits").textContent=date.toLocaleTimeString()
+            console.log(date.toLocaleTimeString())
+        }
+    </script>
+</head>
+<body>
+    <div class="clock-dial">
+         <div class="digits"></div>
+    </div>
+</body>
+</html>
