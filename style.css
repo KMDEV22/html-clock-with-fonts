@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "dg7";
+    src: url(./DSDIGI.woff) format("woff");
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+}
+.clock-dial{
+    border: 2px solid red;
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.digits{
+    color: white;
+    font-size: 50px;
+    font-family: 'dg7';
+    font-weight: bold;
+
+}
